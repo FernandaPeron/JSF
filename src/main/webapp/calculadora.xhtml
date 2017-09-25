@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<title>Calculadora</title>
+</head>
+
+<body>
+	<h1>Calculadora</h1>
+	<h:form>
+	<br/>
+	<h:inputText name="valor1" id="valor1" value="#{calculadoraController.valor1}"/>
+	<h:inputText name="valor2" id="valor2" value="#{calculadoraController.valor2}"/>
+	<br/>	
+	<h:commandButton value="Somar" action="#{calculadoraController.somar()}"/>
+	<h:commandButton value="Subtrair" action="#{calculadoraController.subtrair()}"/>
+	<h:commandButton value="Multiplicar" action="#{calculadoraController.multiplicar()}"/>
+	<h:commandButton value="dividir" action="#{calculadoraController.dividir()}"/>
+	
+	<br/>
+	<h:outputLabel value="resultado: #{calculadoraController.resultado}"/>
+	
+	</h:form>
+</body>
+
+</html>

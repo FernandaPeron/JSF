@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<title>Minusculas e Maiusculas</title>
+</head>
+<body>
+	<h:form>
+	<h:inputText name="palavra" id="palavra" value="#{minMaiController.palavra}" />
+	<h:commandButton value="Minuscula" action="#{minMaiController.palavraMin}"/>
+	<h:commandButton value="Maiuscula" action="#{minMaiController.palavraMai}"/>
+	
+	</h:form>
+</body>
+</html>

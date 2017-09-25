@@ -8,9 +8,17 @@
 	<h:form>
 		<i>ola</i>
 		<strong>ola</strong>
-		<h:inputText name="primeiro campo" id="primeiro campo" value="olar"/>
-		<h:commandButton name = "btnPrimeiro" id = "btnPrimeiro" value = "meu primeiro botao"/>
-		<h:inputTextarea name = "txtArea" id = "txtArea" cols = "20" rows = "30"/>
+		<h:inputText name="primeiroCampo" id="primeiroCampo" value="olar"/>
+		<h:commandButton name ="btnPrimeiro" id ="btnPrimeiro" value = "meu primeiro botao"/>
+		<h:inputTextarea name ="txtArea" id ="txtArea" cols = "20" rows = "30"/>
+		<br/>
+		<br/>
+		<h:commandButton id="btnAlfredo" value="Mostre mais dados" action="#{controller.exibirDados()}"/>
+		<br/>
+		<h:outputLabel value="Nome: #{controller.nome}"/>
+		<br/>
+		<h:outputLabel value="Idade: #{controller.idade}"/>
+		
 	</h:form>
 </h:body>
 </html>
