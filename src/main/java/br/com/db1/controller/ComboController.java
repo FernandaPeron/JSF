@@ -9,11 +9,12 @@ import javax.faces.bean.ManagedBean;
 public class ComboController {
 
 	private String estado;  
-    private static Set<String> estadosDoSul = new HashSet<String>();
+    private static Set<String> estados = new HashSet<String>();
+    
     static{
-    estadosDoSul.add("PR");
-    estadosDoSul.add("SC");
-    estadosDoSul.add("RS");
+    estados.add("PR");
+    estados.add("SC");
+    estados.add("RS");
     }
     
     
@@ -24,10 +25,10 @@ public class ComboController {
 		this.estado = estado;
 	}
 	public Set<String> getEstados() {
-		return estadosDoSul;
+		return estados;
 	}
 	public void setEstados(Set<String> estados) {
-		ComboController.estadosDoSul = estados;
+		ComboController.estados = estados;
 	}
 
 	
