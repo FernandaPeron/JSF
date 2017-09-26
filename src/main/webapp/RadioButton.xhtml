@@ -11,9 +11,8 @@
 	<h:form>
 		<h:outputLabel for="console" value="Console:" />
 		<h:selectOneRadio id="console" value="#{radioController.console}">
-			<f:selectItem itemValue="Xbox" itemLabel="Xbox" />
-			<f:selectItem itemValue="PS" itemLabel="PS" />
-			<f:selectItem itemValue="Nintendo" itemLabel="Nintendo" />
+			<f:selectItems value="#{radioController.console}" />
+			
 		</h:selectOneRadio>
 	</h:form>
 

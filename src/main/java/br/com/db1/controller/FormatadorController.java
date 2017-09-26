@@ -5,26 +5,26 @@ import javax.faces.bean.ManagedBean;
 @ManagedBean
 public class FormatadorController {
 
-	private Integer valor;
-	private String valorFormatado;
+	private Double valor;
+	private Double valorFormatado;
 	
-	public Integer getValor() {
+	public Double getValor() {
 		return valor;
 	}
 
-	public void setValor(Integer valor) {
+	public void setValor(Double valor) {
 		this.valor = valor;
 	}
 
-	public String getValorFormatado() {
+	public Double getValorFormatado() {
 		return valorFormatado;
 	}
 
-	public void setValorFormatado(String valorFormatado) {
+	public void setValorFormatado(Double valorFormatado) {
 		this.valorFormatado = valorFormatado;
 	}
 	
 	public void formatar() {
-		valorFormatado = "R$" + valor +",00";
+		valorFormatado = valor;
 	}
 }

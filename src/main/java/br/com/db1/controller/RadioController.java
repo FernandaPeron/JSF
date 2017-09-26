@@ -5,14 +5,14 @@ import javax.faces.bean.ManagedBean;
 @ManagedBean
 public class RadioController {
 
-	private String console;
-
-	public String getConsole() {
+	private Console console;
+	
+	public Console getConsole() {
 		return console;
 	}
 
-	public void setConsole(String console) {
-		this.console = console;
+	public Console[] getListaConsole() {
+		return Console.values();
 	}
 	
 	
