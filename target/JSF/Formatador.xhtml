@@ -9,8 +9,9 @@
 <body>
 
 	<h:form>
-		<h:inputNumber id="1" value="#{formatadorController.valor}"/>
+		<h:inputText id="valor" value="#{formatadorController.valor}"/>
 		<h:commandButton value="Formatar" action="#{formatadorController.formatar}"/>
+		<br/>
 		<h:outputLabel value="Valor: #{formatadorController.valorFormatado}" />
 	</h:form>
 

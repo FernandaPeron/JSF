@@ -4,15 +4,16 @@
 	xmlns:f="http://java.sun.com/jsf/core">
 
 <head>
-<title>CheckBox</title>
+<title>RadioButton</title>
 </head>
 <body>
 
 	<h:form>
-		<h:selectOneRadio >
-			<f:selectItem itemValue="1" itemLabel="Xbox" />
-			<f:selectItem itemValue="2" itemLabel="PS" />
-			<f:selectItem itemValue="3" itemLabel="Nintendo" />
+		<h:outputLabel for="console" value="Console:" />
+		<h:selectOneRadio id="console" value="#{radioController.console}">
+			<f:selectItem itemValue="Xbox" itemLabel="Xbox" />
+			<f:selectItem itemValue="PS" itemLabel="PS" />
+			<f:selectItem itemValue="Nintendo" itemLabel="Nintendo" />
 		</h:selectOneRadio>
 	</h:form>
 
