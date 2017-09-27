@@ -9,9 +9,6 @@ public class CalculadoraController {
 	private Double valor1;
 	private Double valor2;
 
-	public void zerarCalculo(){
-		resultado = 0.0;
-	}
 	public void somar(){  
 		resultado = valor1 + valor2;
 	}
@@ -24,11 +21,7 @@ public class CalculadoraController {
 	public void multiplicar(){
 		resultado = valor1 * valor2 ;
 	}
-	public Double exibirResultado(){
-		return resultado;
-	}
-	
-	
+
 	public Double getResultado() {
 		return resultado;
 	}
